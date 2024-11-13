@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Complex Order Form</title>
+    </head>
+    <body>
+        <!--Table showing available meals with prices-->
+        <table>
+
+            <tr>
+                <th>Meals</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>Mac 'n Cheese</td>
+                <td>$9.00</td>
+            </tr>
+
+            <tr>
+                <td>French Goose Tongue</td>
+                <td>$158.00</td>
+            </tr>
+
+            <tr>
+                <td>Devil's Eggos</td>
+                <td>$20.00</td>
+            </tr>
+
+        </table><br><br>
+    
+        <!--Form for customer details and shipping-->
+        <form>
+            <!--Customer Details and Shipping-->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="shipping">Shipping Information:</label>
+            <input type="text" id="shipping" name="shipping information" required><br>
+
+            <!--Method of payment-->
+            <p>Payment Method:</p>
+            <label for="credit">Credit Card</label>
+            <input type="radio" id="credit" name="payment" value="credit" required><br>
+            <label for="debit">Debit Card</label>
+            <input type="radio" id="debit" name="payment" value="debit" required><br>
+
+            <!--Terms and Conditions-->
+            <p>Terms and Conditions</p>
+            <label for="terms">I agree to the Terms and Conditions</label>
+            <input type="checkbox" id="terms" name="terms" required><br>
+
+            <!--Placing Orders/Special Instructions-->
+            <p>Special Instructions</p>
+            <label for="special">Type your order here</label>
+            <textarea id="special" name="special" rows="6" cols="60" required></textarea><br>
+
+            <!--Submit Button-->
+            <button type="submit">Place Order</button>
+
+        </form>
+    </body>
+</html>

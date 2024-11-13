@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant Reservation Form</title>
+    </head>
+    <body>
+        <form action="/submit-order" method="POST">
+
+            <!--Date Input-->
+            <label for="date">Date:</label>
+            <input type="text" id="date" name="date" required><br>
+
+            <!--Time Input-->
+            <label for="time">Time:</label>
+            <input type="text" id="time" name="time" required><br>
+
+            <!--Number of Guests-->
+            <label for="number of guests">Number of Guests:</label>
+            <input type="text" id="number of guests" name="number of guests" required><br>
+
+            <!--Special Requests-->
+            <label for="special requests">Special Requests:</label>
+            <textarea id="special requests" name="special requests" rows="6" cols="60"></textarea><br>
+
+            <!--Submit Button-->
+            <button type="submit">Place Reservation</button>
+        </form>
+    </body>
+</html>
